@@ -1,23 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-nunito",
+  display: "swap",
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "ClarifyThemes | Build, Customize, and Enhance WordPress Sites with Ease",
-  description: "ClarifyThemes: The all-in-one ecosystem for modern WordPress websites.",
+  title:
+    "ClarifyThemes | Build, Customize, and Enhance WordPress Sites with Ease",
+  description:
+    "ClarifyThemes: The all-in-one ecosystem for modern WordPress websites.",
 };
 
 export default function RootLayout({
@@ -27,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${nunito.className}  antialiased`}>
         {children}
 
         <Analytics />
