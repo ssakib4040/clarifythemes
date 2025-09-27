@@ -360,14 +360,14 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-4 md:mb-0">
+            <div className="flex flex-col lg:flex-row justify-between items-center">
+              <div className="mb-4 lg:mb-0 lg:w-auto w-full">
                 <h3 className="text-xl font-bold">ClarifyThemes</h3>
                 <p className="text-primary-foreground/80">
                   Professional WordPress Plugins
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-6 text-sm">
+              <div className="flex flex-col lg:flex-row gap-6 text-sm lg:w-auto w-full">
                 <a
                   href="#products"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
