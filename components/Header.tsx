@@ -44,16 +44,16 @@ export default function Header() {
         {/* Desktop: Nav (right) */}
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item, index) => (
-            <a
+            <Link
               key={index}
               href={item.href}
-              className="text-sm font-medium text-gray-700 hover:text-[#4e73df] transition-colors"
+              className="text-md font-medium text-gray-700 hover:text-[#4e73df] transition-colors"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
 
-          <Button className="ml-2 bg-[#3657ff] hover:bg-[#4563fc] text-white rounded-full px-4 py-2 cursor-pointer">
+          <Button className="bg-[#3657ff]  text-white rounded-md px-4 py-2 h-10 cursor-pointer">
             Get Started
           </Button>
         </nav>
