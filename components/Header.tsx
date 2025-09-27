@@ -36,7 +36,7 @@ export default function Header() {
         {/* Left: Brand */}
         <Link
           href="/"
-          className="flex items-center gap-3 font-bold text-gray-900 text-xl"
+          className="flex items-center gap-3 font-bold text-[#3657ff] text-xl"
         >
           ClarifyThemes
         </Link>
@@ -47,13 +47,13 @@ export default function Header() {
             <Link
               key={index}
               href={item.href}
-              className="text-md font-medium text-gray-700 hover:text-[#4e73df] transition-colors"
+              className="text-md font-semibold text-gray-700 hover:text-[#4e73df] transition-colors"
             >
               {item.name}
             </Link>
           ))}
 
-          <Button className="bg-[#3657ff]  text-white rounded-md px-4 py-2 h-10 cursor-pointer">
+          <Button className="bg-[#3657ff] text-white rounded-md px-4 py-2 h-10 cursor-pointer font-semibold">
             Get Started
           </Button>
         </nav>
